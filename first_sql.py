@@ -12,3 +12,21 @@ my_cursor=db.cursor()
 my_cursor.execute("show tables") # showes table
 for x in my_cursor:
      print(x)
+
+
+new_column_data = "insert into customer (branch) values (%s)"
+new_data = [
+     ('technical',),
+     ('QA',),
+     ('web development',),
+     ('technical',),
+     ('technical',),
+     ('developer',),
+     ('QA',),
+     ('data analyst',),
+     ('java developer',),
+     ('python developer',),
+     ('technical',),
+     ('technical',),
+     ('data analyst',)
+]
